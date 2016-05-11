@@ -1,6 +1,7 @@
 {
     "require": {
-        "baryshev/tree-route": "1.1.0",
-        "nikic/fast-route": "0.5.0"
+        "baryshev/tree-route": "2.0.0",
+        "nikic/fast-route": "1.0.0",
+        "alabaster/route": "dev-master"
     }
 }

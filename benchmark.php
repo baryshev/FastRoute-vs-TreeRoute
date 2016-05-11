@@ -48,7 +48,7 @@ foreach ($sections as $section) {
 	}
 }
 
-var_dump($routeIndex);
+//var_dump($routeIndex);
 
 $urls = array_values($routeIndex);
 
@@ -75,6 +75,22 @@ function createTreeRoute($routeIndex)
 	return $router;
 }
 
+function createAlabasterRoute($routeIndex)
+{
+	$collection = new Alabaster\Route\Collection;
+
+	$i = 0;
+	foreach ($routeIndex as $route => $url) {
+		$route = new Alabaster\Route\Route($route);
+		$route->setHandlers('GET', 'handler' . $i, ['*/*']);
+		$collection->addRoute($route);
+		$i++;
+	}
+	$dispatcher = new Alabaster\Route\Dispatcher;
+	$dispatcher->useCollection($collection);
+	return $dispatcher;
+}
+
 $t1 = microtime(true);
 $fastRoute = createFastRoute($routeIndex);
 $t2 = microtime(true);
@@ -84,8 +100,13 @@ $t3 = microtime(true);
 $treeRoute = createTreeRoute($routeIndex);
 $t4 = microtime(true);
 
+$t5 = microtime(true);
+$alabasterRoute = createAlabasterRoute($routeIndex);
+$t6 = microtime(true);
+
 echo 'FastRoute init time: ' . ($t2 - $t1) . PHP_EOL;
-echo 'TreeRoute init time: ' . ($t4 - $t2) . PHP_EOL;
+echo 'TreeRoute init time: ' . ($t4 - $t3) . PHP_EOL;
+echo 'AlabasterRoute init time: ' . ($t6 - $t5) . PHP_EOL, PHP_EOL;
 
 function test($router, $routeIndex, $url)
 {
@@ -99,26 +120,46 @@ function test($router, $routeIndex, $url)
 	return $time;
 }
 
+function testAlabaster($router, $routeIndex, $url)
+{
+	$time = 0;
+	for ($i = 0; $i < 10000; $i++) {
+		$t1 = microtime(true);
+		$router->dispatch('GET', $url, ['*/*' => 0.9]);
+		$t2 = microtime(true);
+		$time += ($t2 - $t1);
+	}
+	return $time;
+}
+
 $fastRouteResultFirst = test($fastRoute, $routeIndex, $urls[0]);
 $treeRouteResultFirst = test($treeRoute, $routeIndex, $urls[0]);
+$alabasterRouteResultFirst = testAlabaster($treeRoute, $routeIndex, $urls[0]);
 
 $fastRouteResultMiddle = test($fastRoute, $routeIndex, $urls[round(sizeof($urls) / 2)]);
 $treeRouteResultMiddle = test($treeRoute, $routeIndex, $urls[round(sizeof($urls) / 2)]);
+$alabasterRouteResultMiddle = testAlabaster($treeRoute, $routeIndex, $urls[round(sizeof($urls) / 2)]);
 
 $fastRouteResultLast = test($fastRoute, $routeIndex, $urls[sizeof($urls) - 1]);
 $treeRouteResultLast = test($treeRoute, $routeIndex, $urls[sizeof($urls) - 1]);
+$alabasterRouteResultLast = testAlabaster($treeRoute, $routeIndex, $urls[sizeof($urls) - 1]);
 
 $fastRouteResultNotFound = test($fastRoute, $routeIndex, '/not/found/url');
 $treeRouteResultNotFound = test($treeRoute, $routeIndex, '/not/found/url');
+$alabasterRouteResultNotFound = testAlabaster($treeRoute, $routeIndex, '/not/found/url');
 
 echo 'FastRoute first route time: ' . $fastRouteResultFirst . PHP_EOL;
 echo 'TreeRoute first route time: ' . $treeRouteResultFirst . PHP_EOL;
+echo 'AlabasterRoute first route time: ' . $alabasterRouteResultFirst . PHP_EOL, PHP_EOL;
 
 echo 'FastRoute middle route time: ' . $fastRouteResultMiddle . PHP_EOL;
 echo 'TreeRoute middle route time: ' . $treeRouteResultMiddle . PHP_EOL;
+echo 'AlabasterRoute middle route time: ' . $alabasterRouteResultMiddle . PHP_EOL, PHP_EOL;
 
 echo 'FastRoute last route time: ' . $fastRouteResultLast . PHP_EOL;
 echo 'TreeRoute last route time: ' . $treeRouteResultLast . PHP_EOL;
+echo 'AlabasterRoute last route time: ' . $alabasterRouteResultLast . PHP_EOL, PHP_EOL;
 
 echo 'FastRoute not found time: ' . $fastRouteResultNotFound . PHP_EOL;
 echo 'TreeRoute not found time: ' . $treeRouteResultNotFound . PHP_EOL;
+echo 'AlabasterRoute not found time: ' . $alabasterRouteResultNotFound . PHP_EOL, PHP_EOL;
