@@ -21,23 +21,23 @@ Results (MacBook Pro Core i5, php 5.6)
 --------------------------------------
 
 ```
-FastRoute init time: 0.0054872035980225
-TreeRoute init time: 0.0027949810028076
-AlabasterRoute init time: 0.015413045883179
+FastRoute init time: 0.0058789253234863
+TreeRoute init time: 0.0029020309448242
+AlabasterRoute init time: 0.014953136444092
 
-FastRoute first route time: 0.056954145431519
-TreeRoute first route time: 0.059270858764648
-AlabasterRoute first route time: 0.059645891189575
+FastRoute first route time: 0.063666820526123
+TreeRoute first route time: 0.060380220413208
+AlabasterRoute first route time: 0.060018301010132
 
-FastRoute middle route time: 0.18004727363586
-TreeRoute middle route time: 0.11252546310425
-AlabasterRoute middle route time: 0.11031222343445
+FastRoute middle route time: 0.143714427948
+TreeRoute middle route time: 0.11122441291809
+AlabasterRoute middle route time: 0.11234712600708
 
-FastRoute last route time: 0.27443623542786
-TreeRoute last route time: 0.1094024181366
-AlabasterRoute last route time: 0.10798025131226
+FastRoute last route time: 0.19296050071716
+TreeRoute last route time: 0.10999894142151
+AlabasterRoute last route time: 0.11317300796509
 
-FastRoute not found time: 0.21182298660278
-TreeRoute not found time: 0.05246376991272
-AlabasterRoute not found time: 0.053146600723267
+FastRoute not found time: 0.1564736366272
+TreeRoute not found time: 0.051846742630005
+AlabasterRoute not found time: 0.052735567092896
 ```
