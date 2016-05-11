@@ -54,13 +54,18 @@ $urls = array_values($routeIndex);
 
 function createFastRoute($routeIndex)
 {
-	$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) use ($routeIndex) {
+	$dispatcher = FastRoute\cachedDispatcher(function(FastRoute\RouteCollector $r) use ($routeIndex) {
 		$i = 0;
 		foreach ($routeIndex as $route => $url) {
 			$r->addRoute('GET', $route, 'handler' . $i);
 			$i++;
 		}
-	});
+	}, [
+	    'cacheFile' => __DIR__ . '/route.cache', /* required */
+	    'cacheDisabled' => IS_DEBUG_ENABLED,     /* optional, enabled by default */
+		'dataGenerator' => 'FastRoute\\DataGenerator\\MarkBased',
+		'dispatcher' => 'FastRoute\\Dispatcher\\MarkBased',
+	]);
 	return $dispatcher;
 }
 
