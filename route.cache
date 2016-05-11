@@ -1,0 +1,1320 @@
+<?php return array (
+  0 => 
+  array (
+  ),
+  1 => 
+  array (
+    'GET' => 
+    array (
+      0 => 
+      array (
+        'regex' => '~^(?|/news/([^/]+)(*MARK:a)|/news/([^/]+)/([^/]+)(*MARK:b)|/news/([^/]+)/([^/]+)/full(*MARK:c)|/news/all/([0-9]+)(*MARK:d)|/news/all/([0-9]+)/([a-z]+)(*MARK:e)|/news/all/([0-9]+)/([a-z]+)/full(*MARK:f)|/news/new/([0-9]+)(*MARK:g)|/news/new/([0-9]+)/([a-z]+)(*MARK:h)|/news/new/([0-9]+)/([a-z]+)/full(*MARK:i)|/news/popular/([0-9]+)(*MARK:j)|/news/popular/([0-9]+)/([a-z]+)(*MARK:k)|/news/popular/([0-9]+)/([a-z]+)/full(*MARK:l)|/news/discussed/([0-9]+)(*MARK:m)|/news/discussed/([0-9]+)/([a-z]+)(*MARK:n)|/news/discussed/([0-9]+)/([a-z]+)/full(*MARK:o)|/news/hot/([0-9]+)(*MARK:p)|/news/hot/([0-9]+)/([a-z]+)(*MARK:q)|/news/hot/([0-9]+)/([a-z]+)/full(*MARK:r)|/news/my/([0-9]+)(*MARK:s)|/news/my/([0-9]+)/([a-z]+)(*MARK:t)|/news/my/([0-9]+)/([a-z]+)/full(*MARK:u)|/projects/([^/]+)(*MARK:v)|/projects/([^/]+)/([^/]+)(*MARK:w)|/projects/([^/]+)/([^/]+)/full(*MARK:x)|/projects/all/([0-9]+)(*MARK:y)|/projects/all/([0-9]+)/([a-z]+)(*MARK:z)|/projects/all/([0-9]+)/([a-z]+)/full(*MARK:aa)|/projects/new/([0-9]+)(*MARK:ab)|/projects/new/([0-9]+)/([a-z]+)(*MARK:ac)|/projects/new/([0-9]+)/([a-z]+)/full(*MARK:ad))$~',
+        'routeMap' => 
+        array (
+          'a' => 
+          array (
+            0 => 'handler0',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'b' => 
+          array (
+            0 => 'handler1',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'c' => 
+          array (
+            0 => 'handler2',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'd' => 
+          array (
+            0 => 'handler3',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'e' => 
+          array (
+            0 => 'handler4',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'f' => 
+          array (
+            0 => 'handler5',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'g' => 
+          array (
+            0 => 'handler6',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'h' => 
+          array (
+            0 => 'handler7',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'i' => 
+          array (
+            0 => 'handler8',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'j' => 
+          array (
+            0 => 'handler9',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'k' => 
+          array (
+            0 => 'handler10',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'l' => 
+          array (
+            0 => 'handler11',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'm' => 
+          array (
+            0 => 'handler12',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'n' => 
+          array (
+            0 => 'handler13',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'o' => 
+          array (
+            0 => 'handler14',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'p' => 
+          array (
+            0 => 'handler15',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'q' => 
+          array (
+            0 => 'handler16',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'r' => 
+          array (
+            0 => 'handler17',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          's' => 
+          array (
+            0 => 'handler18',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          't' => 
+          array (
+            0 => 'handler19',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'u' => 
+          array (
+            0 => 'handler20',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'v' => 
+          array (
+            0 => 'handler21',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'w' => 
+          array (
+            0 => 'handler22',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'x' => 
+          array (
+            0 => 'handler23',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'y' => 
+          array (
+            0 => 'handler24',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'z' => 
+          array (
+            0 => 'handler25',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'aa' => 
+          array (
+            0 => 'handler26',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ab' => 
+          array (
+            0 => 'handler27',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'ac' => 
+          array (
+            0 => 'handler28',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ad' => 
+          array (
+            0 => 'handler29',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+        ),
+      ),
+      1 => 
+      array (
+        'regex' => '~^(?|/projects/popular/([0-9]+)(*MARK:a)|/projects/popular/([0-9]+)/([a-z]+)(*MARK:b)|/projects/popular/([0-9]+)/([a-z]+)/full(*MARK:c)|/projects/discussed/([0-9]+)(*MARK:d)|/projects/discussed/([0-9]+)/([a-z]+)(*MARK:e)|/projects/discussed/([0-9]+)/([a-z]+)/full(*MARK:f)|/projects/hot/([0-9]+)(*MARK:g)|/projects/hot/([0-9]+)/([a-z]+)(*MARK:h)|/projects/hot/([0-9]+)/([a-z]+)/full(*MARK:i)|/projects/my/([0-9]+)(*MARK:j)|/projects/my/([0-9]+)/([a-z]+)(*MARK:k)|/projects/my/([0-9]+)/([a-z]+)/full(*MARK:l)|/users/([^/]+)(*MARK:m)|/users/([^/]+)/([^/]+)(*MARK:n)|/users/([^/]+)/([^/]+)/full(*MARK:o)|/users/all/([0-9]+)(*MARK:p)|/users/all/([0-9]+)/([a-z]+)(*MARK:q)|/users/all/([0-9]+)/([a-z]+)/full(*MARK:r)|/users/new/([0-9]+)(*MARK:s)|/users/new/([0-9]+)/([a-z]+)(*MARK:t)|/users/new/([0-9]+)/([a-z]+)/full(*MARK:u)|/users/popular/([0-9]+)(*MARK:v)|/users/popular/([0-9]+)/([a-z]+)(*MARK:w)|/users/popular/([0-9]+)/([a-z]+)/full(*MARK:x)|/users/discussed/([0-9]+)(*MARK:y)|/users/discussed/([0-9]+)/([a-z]+)(*MARK:z)|/users/discussed/([0-9]+)/([a-z]+)/full(*MARK:aa)|/users/hot/([0-9]+)(*MARK:ab)|/users/hot/([0-9]+)/([a-z]+)(*MARK:ac)|/users/hot/([0-9]+)/([a-z]+)/full(*MARK:ad))$~',
+        'routeMap' => 
+        array (
+          'a' => 
+          array (
+            0 => 'handler30',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'b' => 
+          array (
+            0 => 'handler31',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'c' => 
+          array (
+            0 => 'handler32',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'd' => 
+          array (
+            0 => 'handler33',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'e' => 
+          array (
+            0 => 'handler34',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'f' => 
+          array (
+            0 => 'handler35',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'g' => 
+          array (
+            0 => 'handler36',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'h' => 
+          array (
+            0 => 'handler37',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'i' => 
+          array (
+            0 => 'handler38',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'j' => 
+          array (
+            0 => 'handler39',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'k' => 
+          array (
+            0 => 'handler40',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'l' => 
+          array (
+            0 => 'handler41',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'm' => 
+          array (
+            0 => 'handler42',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'n' => 
+          array (
+            0 => 'handler43',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'o' => 
+          array (
+            0 => 'handler44',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'p' => 
+          array (
+            0 => 'handler45',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'q' => 
+          array (
+            0 => 'handler46',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'r' => 
+          array (
+            0 => 'handler47',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          's' => 
+          array (
+            0 => 'handler48',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          't' => 
+          array (
+            0 => 'handler49',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'u' => 
+          array (
+            0 => 'handler50',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'v' => 
+          array (
+            0 => 'handler51',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'w' => 
+          array (
+            0 => 'handler52',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'x' => 
+          array (
+            0 => 'handler53',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'y' => 
+          array (
+            0 => 'handler54',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'z' => 
+          array (
+            0 => 'handler55',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'aa' => 
+          array (
+            0 => 'handler56',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ab' => 
+          array (
+            0 => 'handler57',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'ac' => 
+          array (
+            0 => 'handler58',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ad' => 
+          array (
+            0 => 'handler59',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+        ),
+      ),
+      2 => 
+      array (
+        'regex' => '~^(?|/users/my/([0-9]+)(*MARK:a)|/users/my/([0-9]+)/([a-z]+)(*MARK:b)|/users/my/([0-9]+)/([a-z]+)/full(*MARK:c)|/tasks/([^/]+)(*MARK:d)|/tasks/([^/]+)/([^/]+)(*MARK:e)|/tasks/([^/]+)/([^/]+)/full(*MARK:f)|/tasks/all/([0-9]+)(*MARK:g)|/tasks/all/([0-9]+)/([a-z]+)(*MARK:h)|/tasks/all/([0-9]+)/([a-z]+)/full(*MARK:i)|/tasks/new/([0-9]+)(*MARK:j)|/tasks/new/([0-9]+)/([a-z]+)(*MARK:k)|/tasks/new/([0-9]+)/([a-z]+)/full(*MARK:l)|/tasks/popular/([0-9]+)(*MARK:m)|/tasks/popular/([0-9]+)/([a-z]+)(*MARK:n)|/tasks/popular/([0-9]+)/([a-z]+)/full(*MARK:o)|/tasks/discussed/([0-9]+)(*MARK:p)|/tasks/discussed/([0-9]+)/([a-z]+)(*MARK:q)|/tasks/discussed/([0-9]+)/([a-z]+)/full(*MARK:r)|/tasks/hot/([0-9]+)(*MARK:s)|/tasks/hot/([0-9]+)/([a-z]+)(*MARK:t)|/tasks/hot/([0-9]+)/([a-z]+)/full(*MARK:u)|/tasks/my/([0-9]+)(*MARK:v)|/tasks/my/([0-9]+)/([a-z]+)(*MARK:w)|/tasks/my/([0-9]+)/([a-z]+)/full(*MARK:x)|/articles/([^/]+)(*MARK:y)|/articles/([^/]+)/([^/]+)(*MARK:z)|/articles/([^/]+)/([^/]+)/full(*MARK:aa)|/articles/all/([0-9]+)(*MARK:ab)|/articles/all/([0-9]+)/([a-z]+)(*MARK:ac)|/articles/all/([0-9]+)/([a-z]+)/full(*MARK:ad))$~',
+        'routeMap' => 
+        array (
+          'a' => 
+          array (
+            0 => 'handler60',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'b' => 
+          array (
+            0 => 'handler61',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'c' => 
+          array (
+            0 => 'handler62',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'd' => 
+          array (
+            0 => 'handler63',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'e' => 
+          array (
+            0 => 'handler64',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'f' => 
+          array (
+            0 => 'handler65',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'g' => 
+          array (
+            0 => 'handler66',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'h' => 
+          array (
+            0 => 'handler67',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'i' => 
+          array (
+            0 => 'handler68',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'j' => 
+          array (
+            0 => 'handler69',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'k' => 
+          array (
+            0 => 'handler70',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'l' => 
+          array (
+            0 => 'handler71',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'm' => 
+          array (
+            0 => 'handler72',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'n' => 
+          array (
+            0 => 'handler73',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'o' => 
+          array (
+            0 => 'handler74',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'p' => 
+          array (
+            0 => 'handler75',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'q' => 
+          array (
+            0 => 'handler76',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'r' => 
+          array (
+            0 => 'handler77',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          's' => 
+          array (
+            0 => 'handler78',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          't' => 
+          array (
+            0 => 'handler79',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'u' => 
+          array (
+            0 => 'handler80',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'v' => 
+          array (
+            0 => 'handler81',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'w' => 
+          array (
+            0 => 'handler82',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'x' => 
+          array (
+            0 => 'handler83',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'y' => 
+          array (
+            0 => 'handler84',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'z' => 
+          array (
+            0 => 'handler85',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'aa' => 
+          array (
+            0 => 'handler86',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ab' => 
+          array (
+            0 => 'handler87',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'ac' => 
+          array (
+            0 => 'handler88',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ad' => 
+          array (
+            0 => 'handler89',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+        ),
+      ),
+      3 => 
+      array (
+        'regex' => '~^(?|/articles/new/([0-9]+)(*MARK:a)|/articles/new/([0-9]+)/([a-z]+)(*MARK:b)|/articles/new/([0-9]+)/([a-z]+)/full(*MARK:c)|/articles/popular/([0-9]+)(*MARK:d)|/articles/popular/([0-9]+)/([a-z]+)(*MARK:e)|/articles/popular/([0-9]+)/([a-z]+)/full(*MARK:f)|/articles/discussed/([0-9]+)(*MARK:g)|/articles/discussed/([0-9]+)/([a-z]+)(*MARK:h)|/articles/discussed/([0-9]+)/([a-z]+)/full(*MARK:i)|/articles/hot/([0-9]+)(*MARK:j)|/articles/hot/([0-9]+)/([a-z]+)(*MARK:k)|/articles/hot/([0-9]+)/([a-z]+)/full(*MARK:l)|/articles/my/([0-9]+)(*MARK:m)|/articles/my/([0-9]+)/([a-z]+)(*MARK:n)|/articles/my/([0-9]+)/([a-z]+)/full(*MARK:o)|/documents/([^/]+)(*MARK:p)|/documents/([^/]+)/([^/]+)(*MARK:q)|/documents/([^/]+)/([^/]+)/full(*MARK:r)|/documents/all/([0-9]+)(*MARK:s)|/documents/all/([0-9]+)/([a-z]+)(*MARK:t)|/documents/all/([0-9]+)/([a-z]+)/full(*MARK:u)|/documents/new/([0-9]+)(*MARK:v)|/documents/new/([0-9]+)/([a-z]+)(*MARK:w)|/documents/new/([0-9]+)/([a-z]+)/full(*MARK:x)|/documents/popular/([0-9]+)(*MARK:y)|/documents/popular/([0-9]+)/([a-z]+)(*MARK:z)|/documents/popular/([0-9]+)/([a-z]+)/full(*MARK:aa)|/documents/discussed/([0-9]+)(*MARK:ab)|/documents/discussed/([0-9]+)/([a-z]+)(*MARK:ac)|/documents/discussed/([0-9]+)/([a-z]+)/full(*MARK:ad))$~',
+        'routeMap' => 
+        array (
+          'a' => 
+          array (
+            0 => 'handler90',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'b' => 
+          array (
+            0 => 'handler91',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'c' => 
+          array (
+            0 => 'handler92',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'd' => 
+          array (
+            0 => 'handler93',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'e' => 
+          array (
+            0 => 'handler94',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'f' => 
+          array (
+            0 => 'handler95',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'g' => 
+          array (
+            0 => 'handler96',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'h' => 
+          array (
+            0 => 'handler97',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'i' => 
+          array (
+            0 => 'handler98',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'j' => 
+          array (
+            0 => 'handler99',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'k' => 
+          array (
+            0 => 'handler100',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'l' => 
+          array (
+            0 => 'handler101',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'm' => 
+          array (
+            0 => 'handler102',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'n' => 
+          array (
+            0 => 'handler103',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'o' => 
+          array (
+            0 => 'handler104',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'p' => 
+          array (
+            0 => 'handler105',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'q' => 
+          array (
+            0 => 'handler106',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'r' => 
+          array (
+            0 => 'handler107',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          's' => 
+          array (
+            0 => 'handler108',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          't' => 
+          array (
+            0 => 'handler109',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'u' => 
+          array (
+            0 => 'handler110',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'v' => 
+          array (
+            0 => 'handler111',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'w' => 
+          array (
+            0 => 'handler112',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'x' => 
+          array (
+            0 => 'handler113',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'y' => 
+          array (
+            0 => 'handler114',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'z' => 
+          array (
+            0 => 'handler115',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'aa' => 
+          array (
+            0 => 'handler116',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ab' => 
+          array (
+            0 => 'handler117',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'ac' => 
+          array (
+            0 => 'handler118',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'ad' => 
+          array (
+            0 => 'handler119',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+        ),
+      ),
+      4 => 
+      array (
+        'regex' => '~^(?|/documents/hot/([0-9]+)(*MARK:a)|/documents/hot/([0-9]+)/([a-z]+)(*MARK:b)|/documents/hot/([0-9]+)/([a-z]+)/full(*MARK:c)|/documents/my/([0-9]+)(*MARK:d)|/documents/my/([0-9]+)/([a-z]+)(*MARK:e)|/documents/my/([0-9]+)/([a-z]+)/full(*MARK:f)|/photos/([^/]+)(*MARK:g)|/photos/([^/]+)/([^/]+)(*MARK:h)|/photos/([^/]+)/([^/]+)/full(*MARK:i)|/photos/all/([0-9]+)(*MARK:j)|/photos/all/([0-9]+)/([a-z]+)(*MARK:k)|/photos/all/([0-9]+)/([a-z]+)/full(*MARK:l)|/photos/new/([0-9]+)(*MARK:m)|/photos/new/([0-9]+)/([a-z]+)(*MARK:n)|/photos/new/([0-9]+)/([a-z]+)/full(*MARK:o)|/photos/popular/([0-9]+)(*MARK:p)|/photos/popular/([0-9]+)/([a-z]+)(*MARK:q)|/photos/popular/([0-9]+)/([a-z]+)/full(*MARK:r)|/photos/discussed/([0-9]+)(*MARK:s)|/photos/discussed/([0-9]+)/([a-z]+)(*MARK:t)|/photos/discussed/([0-9]+)/([a-z]+)/full(*MARK:u)|/photos/hot/([0-9]+)(*MARK:v)|/photos/hot/([0-9]+)/([a-z]+)(*MARK:w)|/photos/hot/([0-9]+)/([a-z]+)/full(*MARK:x)|/photos/my/([0-9]+)(*MARK:y)|/photos/my/([0-9]+)/([a-z]+)(*MARK:z)|/photos/my/([0-9]+)/([a-z]+)/full(*MARK:aa))$~',
+        'routeMap' => 
+        array (
+          'a' => 
+          array (
+            0 => 'handler120',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'b' => 
+          array (
+            0 => 'handler121',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'c' => 
+          array (
+            0 => 'handler122',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'd' => 
+          array (
+            0 => 'handler123',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'e' => 
+          array (
+            0 => 'handler124',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'f' => 
+          array (
+            0 => 'handler125',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'g' => 
+          array (
+            0 => 'handler126',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'h' => 
+          array (
+            0 => 'handler127',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'i' => 
+          array (
+            0 => 'handler128',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'j' => 
+          array (
+            0 => 'handler129',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'k' => 
+          array (
+            0 => 'handler130',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'l' => 
+          array (
+            0 => 'handler131',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'm' => 
+          array (
+            0 => 'handler132',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'n' => 
+          array (
+            0 => 'handler133',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'o' => 
+          array (
+            0 => 'handler134',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'p' => 
+          array (
+            0 => 'handler135',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'q' => 
+          array (
+            0 => 'handler136',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'r' => 
+          array (
+            0 => 'handler137',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          's' => 
+          array (
+            0 => 'handler138',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          't' => 
+          array (
+            0 => 'handler139',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'u' => 
+          array (
+            0 => 'handler140',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'v' => 
+          array (
+            0 => 'handler141',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'w' => 
+          array (
+            0 => 'handler142',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'x' => 
+          array (
+            0 => 'handler143',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'y' => 
+          array (
+            0 => 'handler144',
+            1 => 
+            array (
+              'param1' => 'param1',
+            ),
+          ),
+          'z' => 
+          array (
+            0 => 'handler145',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+          'aa' => 
+          array (
+            0 => 'handler146',
+            1 => 
+            array (
+              'param1' => 'param1',
+              'param2' => 'param2',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);
